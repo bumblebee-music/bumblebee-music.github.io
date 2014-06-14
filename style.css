@@ -114,6 +114,9 @@ nav a:hover, footer a:hover{
 	background-color: white;
 	font-weight: 600;
 }
+#actu{
+	padding-left:1em;
+}
 
 footer{
 	text-align: center;
