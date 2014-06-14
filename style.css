@@ -52,13 +52,11 @@ table {
 
 @font-face {
     font-family: inked_god_font;
-    /*src: url('https://dl.dropboxusercontent.com/u/33786094/bumblebee/iNked_God.eot');*/
-    7src: url('https://dl.dropboxusercontent.com/u/33786094/bumblebee/iNked_God.eot');
+    src: url('iNked_God.eot');
 }
 @font-face {
     font-family: inked_god_font;
-    /*src: local(inked_god_font), url('https://dl.dropboxusercontent.com/u/33786094/bumblebee/iNked_God.ttf') format('opentype');*/
-    src: local(inked_god_font), url('file:///C:/Users/Vince/Dropbox/Public/bumblebee/iNked_God.ttf') format('opentype');
+    src: local(inked_god_font), url('iNked_God.ttf') format('opentype');
 }
 
 body{
@@ -69,7 +67,6 @@ body{
 .bumblebee{
 	font-family: inked_god_font,inherit;
 	text-decoration: none;
-	/*margin-left:1em;*/
 }
 .bumblebee.intexte{
 	margin-left:1em;
