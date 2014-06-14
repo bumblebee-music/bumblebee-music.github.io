@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****************************************************************************************/
+
+
+@font-face {
+    font-family: inked_god_font;
+    /*src: url('https://dl.dropboxusercontent.com/u/33786094/bumblebee/iNked_God.eot');*/
+    7src: url('https://dl.dropboxusercontent.com/u/33786094/bumblebee/iNked_God.eot');
+}
+@font-face {
+    font-family: inked_god_font;
+    /*src: local(inked_god_font), url('https://dl.dropboxusercontent.com/u/33786094/bumblebee/iNked_God.ttf') format('opentype');*/
+    src: local(inked_god_font), url('file:///C:/Users/Vince/Dropbox/Public/bumblebee/iNked_God.ttf') format('opentype');
+}
+
+body{
+	background-color: #D0D0D0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.bumblebee{
+	font-family: inked_god_font,inherit;
+	text-decoration: none;
+	/*margin-left:1em;*/
+}
+.bumblebee.intexte{
+	margin-left:1em;
+}
+.bumblebee:first-letter{
+	font-size:1.5em;
+}
+
+#main{
+	background-color: white;
+	border: solid 1px #C0C0C0;
+	
+	margin: 2em 12%;
+	
+	box-shadow: 1px 1px 12px #555;
+}
+
+header, header a {
+	font-size:4rem;
+	margin:0;
+	padding: 1em 0 0.3em 0;
+	text-align: center;
+	color:#111;
+	font-weight: normal;
+	text-decoration: none;
+}
+header.bumblebee{
+	margin-left:0;
+}
+
+nav, footer{
+	background-color: #111;
+	color:white;
+}
+nav a, footer a{
+	padding:0.5em 1.5em;
+	color:white;
+	display:inline-block;
+	font-size: 1rem;
+	border:4px solid #111;
+	text-decoration: none;
+}
+nav a:hover, footer a:hover{
+	color:#111;
+	background-color: white;
+	font-weight: 600;
+}
+
+footer{
+	text-align: center;
+}
+
+#social{
+	float: right;
+	background: white;
+	height:1em;
+	width:11.4em;
+	padding:0.5em 0.5em;
+	border:4px solid #111;
+}
+
+#social div.fb-like{
+	margin-top: -2px;
+	float: left;
+}
+#social div.googleplus{
+	margin-top: -2px;
+	float: right;
+}
+
+#ingredients_player{
+	width: 430px; 
+	height: 701px;
+	float:left;
+	margin:2rem 4rem;
+}
+
+article{
+	padding:2rem 4rem;
+}
+
+article p:FIRST-LETTER{
+	font-size: 1.5em;
+}
+article p{
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+.titre_album{
+	font-style: italic;
+	text-transform: capitalize;
+	font-family: inked_god_font,inherit;
+}
+
+#filler{
+	text-align: center;
+	font-size: 20rem;
+	margin-top: 200px;
+}
+#filler:after{
+	content:"B";
+	color:#DDD;
+	font-family: inked_god_font,inherit;
+}
+
+a.sociallink{
+	border:none;
+	position:absolute;
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+a.sociallink.facebook{
+	padding-top:0.35em;
+	padding-bottom:0.35em;
+}
+a.sociallink.googleplus{
+	padding-top:0.27em;
+	padding-bottom:0.27em;
+	margin-left:2.5em;
+}
+
+#accueil{
+	height: 701px;
+}
+
+#biographie h2{
+	font-weight: 600;
+	font-size:1.1em;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+#biographie quote{
+	font-style: italic;
+	background-color: #F0F0F0;
+	padding: 0.5em;
+	display: inline-block;
+	margin-bottom:1em;
+	margin-left:1em;
+}
+
+article[ng-view]{
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+article[ng-view].ng-enter{
+	opacity:0;
+	
+	-webkit-transform:translateX(-4px);
+	-moz-transform:translateX(-4px);
+	-ms-transform:translateX(-4px);
+	-o-transform:translateX(-4px);
+	transform:translateX(-4px);
+	
+}
+
+article[ng-view].ng-enter-active{
+	opacity:1;
+}
+
+article[ng-view].ng-leave{
+	opacity:1;
+}
+
+article[ng-view].ng-leave-active{
+	opacity:0;
+	-webkit-transform:translateX(4px);
+	-moz-transform:translateX(4px);
+	-ms-transform:translateX(4px);
+	-o-transform:translateX(4px);
+	transform:translateX(4px);
+}
