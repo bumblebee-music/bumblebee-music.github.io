@@ -170,13 +170,14 @@ article p{
 #filler{
 	text-align: center;
 	font-size: 20rem;
-	margin-top: 200px;
+	margin-top: 230px;
 }
 #filler:after{
 	content:"B";
 	color:#DDD;
 	font-family: inked_god_font,inherit;
 	z-index: -10;
+	margin-left: 0.8em;
 }
 
 a.sociallink{
