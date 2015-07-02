@@ -52,11 +52,11 @@ table {
 
 @font-face {
     font-family: inked_god_font;
-    src: url('iNked_God.eot');
+    src: url('./iNked_God.eot');
 }
 @font-face {
     font-family: inked_god_font;
-    src: local(inked_god_font), url('iNked_God.ttf') format('opentype');
+    src: local(inked_god_font), url('./iNked_God.ttf') format('opentype');
 }
 
 html{
@@ -103,19 +103,17 @@ nav, footer{
 	color:white;
 }
 nav a, footer a{
-	padding:0.5em 1.5em;
+	padding:0.5em 1.2em;
 	color:white;
 	display:inline-block;
 	font-size: 1rem;
 	border:4px solid #111;
 	text-decoration: none;
-	margin-right:1px; /*compense la graisse de la police lors du hover*/
+	font-weight: 600;
 }
 nav a:hover, footer a:hover{
 	color:#111;
 	background-color: white;
-	font-weight: 600;
-	margin-right:0px; /*compense la graisse de la police lors du hover*/
 }
 #actu{
 	padding-left:1em;
@@ -142,7 +140,7 @@ footer{
 	margin-right: 134px;
 }
 
-#ingredients_player{
+#bandcamp_player{
 	width: 430px; 
 	height: 701px;
 	float:left;
@@ -168,9 +166,11 @@ article p{
 }
 
 #filler{
-	text-align: center;
+	text-align: right;
 	font-size: 20rem;
-	margin-top: 230px;
+	margin-top: 103px;
+	position: absolute;
+	right:18%;
 }
 #filler:after{
 	content:"B";
@@ -252,4 +252,38 @@ article[ng-view].ng-leave-active{
 	-ms-transform:translateX(4px);
 	-o-transform:translateX(4px);
 	transform:translateX(4px);
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 1200px) {
+  #filler {
+    display:none;
+  }
+  #bandcamp_player {
+    float:none;
+    width: 430px; 
+	height: 701px;
+	margin:0;
+  }
+}
+@media (max-width: 1000px) {
+	#bandcamp_player {
+		margin:78px;
+	}
+	article{
+		padding:2rem 1.3rem;
+	}
+	#accueil{
+		height: initial;
+	}
+	#main{
+		margin: 0;
+
+		box-shadow: 1px 1px 12px #555;
+	}
+	nav{
+		padding-left: 82px;
+		border-bottom: 1px solid #111;
+	}
 }

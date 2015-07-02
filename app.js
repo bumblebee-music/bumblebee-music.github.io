@@ -9,6 +9,9 @@ bumblebeeApp.config(['$routeProvider',
                         when('/a-propos', {
                           templateUrl: "apropos.html",
                         }).
+                         when('/ingredients', {
+                          templateUrl: "ingredients.html",
+                        }).
                         otherwise({
                         	templateUrl: "accueil.html"
                         });
