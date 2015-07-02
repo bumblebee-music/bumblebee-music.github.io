@@ -49,15 +49,14 @@ table {
 
 /****************************************************************************************/
 
+@font-face{
+    font-family : "inked_god_font";
 
-@font-face {
-    font-family: inked_god_font;
-    src: url('./iNked_God.eot');
+    src : url('iNked_God.eot'); /* Pour IE9 Compat mode */
+    src : url('iNked_God.eot?') format('eot'),
+          url('iNked_God.ttf') format('truetype');
 }
-@font-face {
-    font-family: inked_god_font;
-    src: local(inked_god_font), url('./iNked_God.ttf') format('opentype');
-}
+
 
 html{
 	background-color: #D0D0D0;
