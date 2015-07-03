@@ -65,7 +65,7 @@ html{
 }
 
 .bumblebee{
-	font-family: inked_god_font,inherit;
+	font-family: inked_god_font,serif;
 	text-decoration: none;
 }
 .bumblebee.intexte{
@@ -160,8 +160,10 @@ article p{
 
 .titre_album{
 	font-style: italic;
-	text-transform: capitalize;
-	font-family: inked_god_font,inherit;
+	font-family: inked_god_font,serif;
+}
+nav a .titre_album{
+	letter-spacing:0.15em;
 }
 
 #filler{
@@ -174,7 +176,7 @@ article p{
 #filler:after{
 	content:"B";
 	color:#DDD;
-	font-family: inked_god_font,inherit;
+	font-family: inked_god_font,serif;
 	z-index: -10;
 	margin-left: 0.8em;
 }
@@ -255,6 +257,11 @@ article[ng-view].ng-leave-active{
 
 
 /*RESPONSIVE*/
+@media (max-width: 1340px) {
+  #filler {
+    opacity:0.5;
+  }
+}
 @media (max-width: 1200px) {
   #filler {
     display:none;
